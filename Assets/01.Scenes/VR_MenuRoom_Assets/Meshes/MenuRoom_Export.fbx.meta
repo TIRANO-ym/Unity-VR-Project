@@ -1,0 +1,270 @@
+fileFormatVersion: 2
+guid: e7a29137cf3d35045a8afca1675cb0d9
+timeCreated: 1494008763
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: group2
+    100002: group3
+    100004: //RootNode
+    100006: pCube1
+    100008: pCube10
+    100010: pCube11
+    100012: pCube12
+    100014: pCube13
+    100016: pCube14
+    100018: pCube15
+    100020: pCube16
+    100022: pCube5
+    100024: pCube6
+    100026: pCube7
+    100028: pCube8
+    100030: pCube9
+    100032: polySurface1
+    100034: polySurface11
+    100036: polySurface15
+    100038: polySurface2
+    100040: polySurface4
+    100042: polySurface6
+    100044: polySurface9
+    100046: Barrier_Railing
+    100048: Barrier_Supports
+    100050: BrushedMetal
+    100052: BrushedMetal 1
+    100054: BrushedMetal 2
+    100056: CircularBarrier
+    100058: Disk
+    100060: Floor
+    100062: GlossyBlack
+    100064: GlossyBlack 1
+    100066: GlossyBlack 2
+    100068: LightBars_Bottom
+    100070: LightBars_Rings
+    100072: LightBars_Top
+    100074: Screen_01
+    100076: Screen_02
+    100078: Screen_03
+    100080: ScreenMount_01
+    100082: ScreenMount_02
+    100084: ScreenMount_03
+    100086: Screens
+    100088: Walls
+    400000: group2
+    400002: group3
+    400004: //RootNode
+    400006: pCube1
+    400008: pCube10
+    400010: pCube11
+    400012: pCube12
+    400014: pCube13
+    400016: pCube14
+    400018: pCube15
+    400020: pCube16
+    400022: pCube5
+    400024: pCube6
+    400026: pCube7
+    400028: pCube8
+    400030: pCube9
+    400032: polySurface1
+    400034: polySurface11
+    400036: polySurface15
+    400038: polySurface2
+    400040: polySurface4
+    400042: polySurface6
+    400044: polySurface9
+    400046: Barrier_Railing
+    400048: Barrier_Supports
+    400050: BrushedMetal
+    400052: BrushedMetal 1
+    400054: BrushedMetal 2
+    400056: CircularBarrier
+    400058: Disk
+    400060: Floor
+    400062: GlossyBlack
+    400064: GlossyBlack 1
+    400066: GlossyBlack 2
+    400068: LightBars_Bottom
+    400070: LightBars_Rings
+    400072: LightBars_Top
+    400074: Screen_01
+    400076: Screen_02
+    400078: Screen_03
+    400080: ScreenMount_01
+    400082: ScreenMount_02
+    400084: ScreenMount_03
+    400086: Screens
+    400088: Walls
+    2300000: pCube1
+    2300002: pCube10
+    2300004: pCube11
+    2300006: pCube12
+    2300008: pCube13
+    2300010: pCube14
+    2300012: pCube15
+    2300014: pCube16
+    2300016: pCube5
+    2300018: pCube6
+    2300020: pCube7
+    2300022: pCube8
+    2300024: pCube9
+    2300026: polySurface11
+    2300028: polySurface15
+    2300030: polySurface2
+    2300032: polySurface4
+    2300034: polySurface6
+    2300036: polySurface9
+    2300038: Barrier_Railing
+    2300040: Barrier_Supports
+    2300042: BrushedMetal
+    2300044: BrushedMetal 1
+    2300046: BrushedMetal 2
+    2300048: Disk
+    2300050: GlossyBlack
+    2300052: GlossyBlack 1
+    2300054: GlossyBlack 2
+    2300056: LightBars_Bottom
+    2300058: LightBars_Rings
+    2300060: LightBars_Top
+    2300062: Screen_01
+    2300064: Screen_02
+    2300066: Screen_03
+    2300068: Walls
+    3300000: pCube1
+    3300002: pCube10
+    3300004: pCube11
+    3300006: pCube12
+    3300008: pCube13
+    3300010: pCube14
+    3300012: pCube15
+    3300014: pCube16
+    3300016: pCube5
+    3300018: pCube6
+    3300020: pCube7
+    3300022: pCube8
+    3300024: pCube9
+    3300026: polySurface11
+    3300028: polySurface15
+    3300030: polySurface2
+    3300032: polySurface4
+    3300034: polySurface6
+    3300036: polySurface9
+    3300038: Barrier_Railing
+    3300040: Barrier_Supports
+    3300042: BrushedMetal
+    3300044: BrushedMetal 1
+    3300046: BrushedMetal 2
+    3300048: Disk
+    3300050: GlossyBlack
+    3300052: GlossyBlack 1
+    3300054: GlossyBlack 2
+    3300056: LightBars_Bottom
+    3300058: LightBars_Rings
+    3300060: LightBars_Top
+    3300062: Screen_01
+    3300064: Screen_02
+    3300066: Screen_03
+    3300068: Walls
+    4300000: polySurface15
+    4300002: polySurface4
+    4300004: polySurface6
+    4300006: polySurface9
+    4300008: pCube12
+    4300010: pCube1
+    4300012: pCube13
+    4300014: polySurface2
+    4300016: pCube10
+    4300018: pCube9
+    4300020: pCube5
+    4300022: pCube6
+    4300024: pCube7
+    4300026: pCube8
+    4300028: pCube11
+    4300030: pCube14
+    4300032: pCube15
+    4300034: pCube16
+    4300036: polySurface11
+    4300038: Disk
+    4300040: LightBars_Bottom
+    4300042: LightBars_Top
+    4300044: LightBars_Rings
+    4300046: Screen_01
+    4300048: Screen_02
+    4300050: Screen_03
+    4300052: Barrier_Railing
+    4300054: GlossyBlack
+    4300056: BrushedMetal
+    4300058: GlossyBlack
+    4300060: BrushedMetal
+    4300062: GlossyBlack
+    4300064: BrushedMetal
+    4300066: Barrier_Supports
+    4300068: Walls
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.025
+    animationPositionError: 0.5
+    animationScaleError: 0.025
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,85 @@
+fileFormatVersion: 2
+guid: 7a515b8f9b5cbed4d8730e2278aecd0a
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: glass_auto_door
+    100002: //RootNode
+    100004: glass_auto_door_glass
+    100006: glass_auto_door_left_glass
+    100008: glass_auto_left_door
+    400000: glass_auto_door
+    400002: //RootNode
+    400004: glass_auto_door_glass
+    400006: glass_auto_door_left_glass
+    400008: glass_auto_left_door
+    2300000: glass_auto_door
+    2300002: glass_auto_door_glass
+    2300004: glass_auto_door_left_glass
+    2300006: glass_auto_left_door
+    3300000: glass_auto_door
+    3300002: glass_auto_door_glass
+    3300004: glass_auto_door_left_glass
+    3300006: glass_auto_left_door
+    4300000: glass_auto_door_glass
+    4300002: glass_auto_door
+    4300004: glass_auto_door_left_glass
+    4300006: glass_auto_left_door
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1.39999998
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
