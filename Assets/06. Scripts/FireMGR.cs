@@ -2,8 +2,8 @@
 
 public class FireMGR : MonoBehaviour
 {
-    public Transform[] firePoints; //불이 출현할 위치
-    public GameObject fire; // 불 객체를 할당할 변수.
+    private Transform[] firePoints;          // 불이 출현할 위치
+    private GameObject fire;                 // 불 객체를 할당할 변수. (Tag = Fire)
 
     int fireCount = 0, maxFireCount = 4;
 
@@ -51,7 +51,5 @@ public class FireMGR : MonoBehaviour
         }
 
         Destroy(fire);
-
-        
     }
 }

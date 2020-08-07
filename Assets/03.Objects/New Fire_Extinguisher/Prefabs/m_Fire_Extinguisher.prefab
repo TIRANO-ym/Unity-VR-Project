@@ -559,6 +559,18 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 19891198, guid: 7edcc7d7e9e78d54899028cc1dd9dd03, type: 3}
+      propertyPath: CollisionModule.collisionMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19891198, guid: 7edcc7d7e9e78d54899028cc1dd9dd03, type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19891198, guid: 7edcc7d7e9e78d54899028cc1dd9dd03, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7edcc7d7e9e78d54899028cc1dd9dd03, type: 3}
 --- !u!4 &5159161074146080825 stripped
