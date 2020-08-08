@@ -5,7 +5,7 @@ using UnityEngine;
 public class ExitPoint : MonoBehaviour
 {
     public Transform playerTr = null;
-    public GameObject notice;
+    public PlayerMGR playerMGR = null;
     public Material image = null;
 
     private Transform pointerTr;
@@ -28,10 +28,7 @@ public class ExitPoint : MonoBehaviour
         if (dist <= exitDist)
         {
             Destroy(pointerTr.gameObject);
-
-            // ******************상하관계 다르면 수정해야함
-            notice.GetComponent<MeshRenderer>().material = image;
-            notice.SetActive(true);
+            playerMGR.showDisplay(true, image);
         }
     }
 }

@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 6508446977105595265}
   - component: {fileID: 6508446977090391747}
   - component: {fileID: 6508446977090500451}
+  - component: {fileID: 3871038417728532536}
   m_Layer: 0
   m_Name: Fire_Particle
   m_TagString: Untagged
@@ -3700,7 +3701,7 @@ ParticleSystem:
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
@@ -4717,6 +4718,20 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &3871038417728532536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6508446977106089889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e759caf76c8e7bf49a2c6664287c77fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMGR: {fileID: 0}
+  playerTr: {fileID: 0}
 --- !u!1 &6508446977106089891
 GameObject:
   m_ObjectHideFlags: 0
@@ -14111,6 +14126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fire: {fileID: 6508446977106089889}
+  fireCharCollisionCheck: {fileID: 0}
 --- !u!1001 &6508446975582661647
 PrefabInstance:
   m_ObjectHideFlags: 0

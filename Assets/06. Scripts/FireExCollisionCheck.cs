@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireCollisionCheck : MonoBehaviour
+public class FireExCollisionCheck : MonoBehaviour
 {
     public GameObject fire = null;
+    public FireCharCollisionCheck fireCharCollisionCheck = null;
+
     private int collision_count = 0;
     private float reduction_size = 0.1f;
 
@@ -24,5 +26,6 @@ public class FireCollisionCheck : MonoBehaviour
     private void ReductionScale()
     {
         fire.transform.localScale -= new Vector3(reduction_size, reduction_size, reduction_size);
+        fireCharCollisionCheck.reductionDamageDist();
     }
 }
