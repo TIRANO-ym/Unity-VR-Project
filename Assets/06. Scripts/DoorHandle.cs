@@ -13,18 +13,18 @@ public class DoorHandle : MonoBehaviour
     private Vector3[] handles_position = new Vector3[2];
     private Vector3[] handles_scale = new Vector3[2];
     private Vector3 door_position;
+    private AudioSource audio;
 
     private bool isOpen = false;
     private bool done = false;
 
     void Start()
     {
+        audio = door.GetComponent<AudioSource>();
         rigid = thisHandle.GetComponent<Rigidbody>();
 
         handles[0] = thisHandle;
         handles[1] = otherHandle;
-
-        //handles = door.GetComponentsInChildren<OVRGrabbable>();
 
         for(int i = 0; i < 2; i++)
         {
@@ -87,6 +87,7 @@ public class DoorHandle : MonoBehaviour
         door.transform.localEulerAngles = new Vector3(0, 90, 0);
         door.transform.localPosition = new Vector3((float)(door_position.x + 0.41), 0, (float)(door_position.z - 0.43));
         door_position = door.transform.localPosition;
+        audio.Play();
     }
 
     void open()
@@ -94,5 +95,6 @@ public class DoorHandle : MonoBehaviour
         door.transform.localEulerAngles = new Vector3(0, 0, 0);
         door.transform.localPosition = new Vector3((float)(door_position.x - 0.41), 0, (float)(door_position.z + 0.43));
         door_position = door.transform.localPosition;
+        audio.Play();
     }
 }

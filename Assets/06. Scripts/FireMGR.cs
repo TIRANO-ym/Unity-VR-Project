@@ -2,10 +2,13 @@
 
 public class FireMGR : MonoBehaviour
 {
-    private Transform[] firePoints;          // 불이 출현할 위치
-    private GameObject fire;                 // 불 객체를 할당할 변수. (Tag = Fire)
+    public Material image;                  // 불을 모두 껐을 경우 전달할 이미지
 
-    int fireCount = 0, maxFireCount = 4;
+    private Transform[] firePoints;         // 불이 출현할 위치
+    private GameObject fire;                // 불 객체를 할당할 변수. (Tag = Fire)
+    private AudioSource[] sounds;
+
+    private int fireCount = 0, maxFireCount = 4;
 
     public static FireMGR instance = null;
 
@@ -16,6 +19,7 @@ public class FireMGR : MonoBehaviour
 
     void Start()
     {
+        sounds = GameObject.Find("FireManager").GetComponentsInChildren<AudioSource>();
         firePoints = GameObject.Find("FireSpawnPoint").GetComponentsInChildren<Transform>();
 
         fire = GameObject.FindGameObjectWithTag("Fire");
@@ -43,13 +47,32 @@ public class FireMGR : MonoBehaviour
                         flag = false;
                 }
             }
-
+            // fireCount번째 불 >>> FireSpawnPoint의 index번째에 생성
             Instantiate(fire, firePoints[index].position, firePoints[index].rotation);
             used[fireCount] = index;
-            Debug.Log(fireCount + "번째 불>>> FireSpawnPoint의 index" + index + "번째에 생성");
             fireCount++;
         }
-
+        
         Destroy(fire);
+        Invoke("playAudio", 3);         // 게임 시작하고 3초 뒤 사이렌 발생
+    }
+
+    private void playAudio()
+    {
+        foreach(AudioSource audio in sounds)
+            audio.Play();
+    }
+    
+    public void reduceFire()
+    {
+        fireCount--;
+        // 모든 화재 진압 시
+        if(fireCount <= 0)
+        {
+            foreach (AudioSource audio in sounds)
+                audio.Stop();
+
+            GameObject.Find("PlayerManager").GetComponent<PlayerMGR>().showDisplay(true, image);
+        }
     }
 }

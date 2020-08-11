@@ -7,23 +7,12 @@ public class PlayerMGR : MonoBehaviour
     public GameObject display = null;
     public Material failImage = null;
     public OVRPlayerController playerController = null;
+    public AudioSource speaker_short, speaker_long;
+    public AudioClip sound_damage, sound_dead, sound_success;
 
     private int HP = 100;
     private bool isFinished = false;
-    
-    /*
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    */
 
     public int getHP()
     {
@@ -40,19 +29,36 @@ public class PlayerMGR : MonoBehaviour
             {
                 showDisplay(false, failImage);
             }
+            else if(HP <= 50)
+            {
+                if (!speaker_long.isPlaying)
+                    speaker_long.Play();
+            }
+
+            if (!speaker_short.isPlaying)
+                speaker_short.PlayOneShot(sound_damage);
         }
     }
 
     public void showDisplay(bool success, Material image)
     {
+        isFinished = true;
+
         if(success)
         {
+            speaker_long.Stop();
+            speaker_short.PlayOneShot(sound_success, 0.4f);
+
             display.GetComponent<MeshRenderer>().material = image;
             display.SetActive(true);
         }
         else
         {
+            speaker_long.Stop();
+            speaker_short.PlayOneShot(sound_dead, 0.4f);
+
             playerController.EnableLinearMovement = false;
+
             display.GetComponent<MeshRenderer>().material = image;
             display.SetActive(true);
         }

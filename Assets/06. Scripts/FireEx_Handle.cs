@@ -10,6 +10,7 @@ public class FireEx_Handle : MonoBehaviour
     
     private Rigidbody rigid;
     private Vector3 position;
+    private AudioSource audio;
 
     private int durability;
     private bool isSetted = true;
@@ -20,6 +21,7 @@ public class FireEx_Handle : MonoBehaviour
         rigid = thisObject.GetComponent<Rigidbody>();
         //position = new Vector3((float)-0.12, (float)0.233, 0);
         position = thisObject.transform.localPosition;
+        audio = parent.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -30,11 +32,17 @@ public class FireEx_Handle : MonoBehaviour
             if (durability <= 0)            // 내구도가 없으면
             {
                 print("This Fire EX is empty.");
-                if(particle.isPlaying)
+                if (particle.isPlaying)
+                {
                     particle.Stop();
+                    audio.Stop();
+                }
             }
-            else /*if (!particle.isPlaying)    // Play()는 한번만 해야하니까.
-                */particle.Play();                // 내구도가 남아있으면 분말 분사
+            else if (!particle.isPlaying)    // Play()는 한번만 해야하니까.
+            {
+                particle.Play();                // 내구도가 남아있으면 분말 분사
+                audio.Play();
+            }
             
             durability--;                   // 작동 중엔 내구도 감소(약 10초 사용 가능?)
         }
@@ -53,6 +61,7 @@ public class FireEx_Handle : MonoBehaviour
                 thisObject.transform.localRotation = Quaternion.identity;
 
                 particle.Stop();                // 핸들을 떼면 분말 분사를 멈춘다
+                audio.Stop();
             }
         }
     }
