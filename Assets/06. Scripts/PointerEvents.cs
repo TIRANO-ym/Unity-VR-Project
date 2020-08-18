@@ -42,10 +42,13 @@ public class PointerEvents : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         print("Up");
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public virtual void OnPointerClick(PointerEventData eventData)
     {
         //onClick.Invoke();
-        print("Click");
-        SceneManager.LoadScene("HanbatUniversity");
+        print(gameObject.name + "Click");
+        if(gameObject.name == "Start")
+            SceneManager.LoadScene("HanbatUniversity");
+        else if (gameObject.name == "Exit")
+            Application.Quit();
     }
 }
