@@ -7,14 +7,15 @@ public class FireExCollisionCheck : MonoBehaviour
     public GameObject fire = null;
     public FireCharCollisionCheck fireCharCollisionCheck = null;
 
-    private FireMGR fireMGR;
+    //private FireMGR fireMGR;
     private int collision_count = 0;
     private float reduction_size = 0.1f;
 
+    /*
     private void Start()
     {
         fireMGR = GameObject.Find("FireManager").GetComponent<FireMGR>();
-    }
+    }*/
 
     private void OnParticleCollision(GameObject other)
     {
@@ -30,7 +31,7 @@ public class FireExCollisionCheck : MonoBehaviour
             {
                 Destroy(fire);
                 fire = null;
-                fireMGR.reduceFire();
+                //fireMGR.reduceFire();
             }
         }
     }

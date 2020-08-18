@@ -2,11 +2,11 @@
 
 public class FireMGR : MonoBehaviour
 {
-    public Material image;                  // 불을 모두 껐을 경우 전달할 이미지
+    //public Material image;                  // 불을 모두 껐을 경우 전달할 이미지
 
     private Transform[] firePoints;         // 불이 출현할 위치
     private GameObject fire;                // 불 객체를 할당할 변수. (Tag = Fire)
-    private AudioSource[] sounds;
+    private AudioSource[] siren_sounds;
 
     private int fireCount = 0, maxFireCount = 4;
 
@@ -19,7 +19,7 @@ public class FireMGR : MonoBehaviour
 
     void Start()
     {
-        sounds = GameObject.Find("FireManager").GetComponentsInChildren<AudioSource>();
+        siren_sounds = GameObject.Find("FireManager").GetComponentsInChildren<AudioSource>();
         firePoints = GameObject.Find("FireSpawnPoint").GetComponentsInChildren<Transform>();
 
         fire = GameObject.FindGameObjectWithTag("Fire");
@@ -59,20 +59,19 @@ public class FireMGR : MonoBehaviour
 
     private void playAudio()
     {
-        foreach(AudioSource audio in sounds)
+        foreach(AudioSource audio in siren_sounds)
             audio.Play();
     }
-    
+    /*
     public void reduceFire()
     {
         fireCount--;
         // 모든 화재 진압 시
         if(fireCount <= 0)
         {
-            foreach (AudioSource audio in sounds)
+            foreach (AudioSource audio in siren_sounds)
                 audio.Stop();
-
             GameObject.Find("PlayerManager").GetComponent<PlayerMGR>().showDisplay(true, image);
         }
-    }
+    }*/
 }
