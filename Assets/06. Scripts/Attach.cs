@@ -12,21 +12,12 @@ public class Attach : MonoBehaviour
     float turnBufferInDegrees = 0f;
     [SerializeField]
     float turnSpeed = 0.18f;
-    /*[SerializeField]
-    bool lockPitch = false;*/
 
     void Update()
     {
         transform.position = cameraTransform.position + offsetFromCamera;
 
         Vector3 cameraEuler = cameraTransform.rotation.eulerAngles;
-
-        //cameraEuler.x = 0f;
-
-        /*if (lockPitch)
-        {
-            cameraEuler.z = -90f;
-        }*/
 
         Quaternion targetQuat = Quaternion.Euler(cameraEuler);
 
@@ -35,7 +26,6 @@ public class Attach : MonoBehaviour
         if (angle > turnBufferInDegrees)
         {
             transform.rotation = Quaternion.Lerp(transform.rotation, targetQuat, turnSpeed);
-            //transform.localPosition = cameraTransform.localPosition + offsetFromCamera;
         }
     }
 }

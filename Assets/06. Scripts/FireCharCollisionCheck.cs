@@ -15,7 +15,7 @@ public class FireCharCollisionCheck : MonoBehaviour
     void Start()
     {
         fireTr = this.gameObject.transform;
-        damage_dist = 2f;
+        damage_dist = 4f;
     }
 
     void Update()
@@ -24,16 +24,19 @@ public class FireCharCollisionCheck : MonoBehaviour
 
         if (current_dist <= damage_dist)        // 불에 가까워지면
         {
-            if (playerMGR.getHP() > 0)
+            if (System.Math.Abs(playerTr.position.y - fireTr.position.y) <= 1)
             {
-                // 화재와 캐릭터 충돌
-                playerMGR.causeDamage(fireDamage);
+                if (playerMGR.getHP() > 0)
+                {
+                    // 화재와 캐릭터 충돌
+                    playerMGR.causeDamage(fireDamage);
+                }
             }
         }
     }
 
     public void reduceDamageDist()
     {
-        damage_dist -= 0.2f;        // 불 크기가 작아질수록 데미지 입는 범위도 감소
+        damage_dist -= 0.4f;        // 불 크기가 작아질수록 데미지 입는 범위도 감소
     }
 }

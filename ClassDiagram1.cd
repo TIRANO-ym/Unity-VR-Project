@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Attach">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAAAAAAAAQAAAoAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\06. Scripts\Attach.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoorHandle">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQARCAgAAAAAKAEAAABAABAAAEAAIQAACAEAAA=</HashCode>
+      <FileName>Assets\06. Scripts\DoorHandle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExitPoint">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAABAAAEAAAAEAAAAAAAAAAACAAAAAE=</HashCode>
+      <FileName>Assets\06. Scripts\ExitPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireCharCollisionCheck">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQADAAAACAEAAABAAgEAAAAAAAEAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Assets\06. Scripts\FireCharCollisionCheck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireEx_Body">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\06. Scripts\FireEx_Body.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireEx_Handle">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAABAAggAIAABAABAAAAAEAQAAAAAAAA=</HashCode>
+      <FileName>Assets\06. Scripts\FireEx_Handle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireExCollisionCheck">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAABAAAEABAAAQAAEAAA=</HashCode>
+      <FileName>Assets\06. Scripts\FireExCollisionCheck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireMGR">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAACAABAAAAAAAAAAAAEhAAQAABAAAAAAAAEA=</HashCode>
+      <FileName>Assets\06. Scripts\FireMGR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhysicsPointer">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAABAQAAAAAAAAAIQAAAAAAAAQEAAAAAAEA=</HashCode>
+      <FileName>Assets\06. Scripts\PhysicsPointer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerMGR">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAACAAAAAAAAAAAAQAIAAAAQgEAAAAAAABgAEQAAoA=</HashCode>
+      <FileName>Assets\06. Scripts\PlayerMGR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerState">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\06. Scripts\PlayerState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PointerEvents" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAgAKAAAAAAAACAgAAAAgAgAABAAAAQAAAAA=</HashCode>
+      <FileName>Assets\06. Scripts\PointerEvents.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="VRInput">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAABBEAQAAAAAAAAAAAAAAAAAAAAAASAEA=</HashCode>
+      <FileName>Assets\06. Scripts\VRInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

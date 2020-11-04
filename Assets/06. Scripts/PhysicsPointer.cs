@@ -4,9 +4,9 @@ public class PhysicsPointer : MonoBehaviour
 {
     public float defaultLength = 3.0f;
 
-    private LineRenderer lineRenderer = null;
+    private LineRenderer lineRenderer;
 
-    private void Awake()
+    private void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
     }

@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class PlayerMGR : MonoBehaviour
 {
+    public GameObject physics = null;
     public GameObject display = null;
     public Material failImage = null;
     public OVRPlayerController playerController = null;
     public AudioSource speaker_short, speaker_long;
     public AudioClip sound_damage, sound_dead, sound_success;
 
-    private int HP = 100;
+    private int HP = 500;
     private bool isFinished = false;
 
 
@@ -29,7 +30,7 @@ public class PlayerMGR : MonoBehaviour
             {
                 showDisplay(false, failImage);
             }
-            else if(HP <= 50)
+            else if(HP <= 250)
             {
                 if (!speaker_long.isPlaying)
                     speaker_long.Play();
@@ -49,8 +50,10 @@ public class PlayerMGR : MonoBehaviour
             speaker_long.Stop();
             speaker_short.PlayOneShot(sound_success, 0.4f);
 
-            display.GetComponent<MeshRenderer>().material = image;
+            display.GetComponentInChildren<MeshRenderer>().material = image;
             display.SetActive(true);
+
+            physics.SetActive(true);
         }
         else
         {
@@ -59,8 +62,10 @@ public class PlayerMGR : MonoBehaviour
 
             playerController.EnableLinearMovement = false;
 
-            display.GetComponent<MeshRenderer>().material = image;
+            display.GetComponentInChildren<MeshRenderer>().material = image;
             display.SetActive(true);
+
+            physics.SetActive(true);
         }
     }
 }

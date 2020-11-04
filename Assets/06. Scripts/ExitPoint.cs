@@ -11,13 +11,14 @@ public class ExitPoint : MonoBehaviour
     private Transform pointerTr;
     private float dist, exitDist;
 
+    
     void Start()
     {
         pointerTr = this.gameObject.transform;
         exitDist = 1f;
     }
 
-
+    
     void Update()
     {
         // @@@@@@@@@@탈출 성공 사운드 재생
@@ -31,4 +32,5 @@ public class ExitPoint : MonoBehaviour
             playerMGR.showDisplay(true, image);
         }
     }
+
 }

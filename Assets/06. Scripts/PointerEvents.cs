@@ -50,5 +50,7 @@ public class PointerEvents : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             SceneManager.LoadScene("HanbatUniversity");
         else if (gameObject.name == "Exit")
             Application.Quit();
+        else if(gameObject.name == "Restart")
+            SceneManager.LoadScene("Home");
     }
 }
