@@ -33,3 +33,5 @@
 
 * 주의사항: 플레이어가 화재에 근접하면 체력이 감소하거나 사망합니다.
            불이 대피로를 막고 있다면, 근처에 있는 소화기를 찾아 화재를 진압해야 합니다.
+
+![미리보기](https://github.com/TIRANO-ym/Unity-VR-Project/blob/master/preview_vr.png)
